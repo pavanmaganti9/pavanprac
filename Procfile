@@ -1,0 +1,1 @@
+web: gunicorn pavanprac.wsgi --log-file -
