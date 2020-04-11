@@ -3,4 +3,5 @@ from django.http import HttpResponse
 # Create your views here.
 def index(request):
 	#return HttpResponse('Hello Pavan!')
-	return render(request, 'index.html', {'title' : 'Pavan Maganti'})
+	Months = ["Jan","Feb","Mar","April","May","June"]
+	return render(request, 'index1.html', {'mnt' : Months})
