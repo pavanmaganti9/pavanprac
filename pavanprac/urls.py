@@ -16,8 +16,11 @@ Including another URLconf
 from django.conf.urls import include, url
 from django.contrib import admin
 from django.urls import path
+from default import views as d_views
+
 
 urlpatterns = [
     url(r'^$', include('default.urls')),
     path('admin/', admin.site.urls),
+    url(r'^sms/$', d_views.sms, name='sms'),
 ]
